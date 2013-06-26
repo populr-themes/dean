@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Name of yur theme -->
+  <title>Dean</title>
+
+  <palette class="palette-default" name="Default" preview="#333">
+  <palette class="palette-custom" preview="custom">
+
+  <!-- Add any styles your theme requires here -->
+  <link rel="stylesheet/less" type="text/css" href="/styles/main.less">
+
+  <!-- This script loads the Populr theming engine. Populr will automatically remove it at runtime. -->
+  <script src="http://populr.me/assets/developers/themer.js"></script>
+
+  <!-- Add any javscript your theme requires here -->
+  <script src="/js/main.js"></script>
+
+</head>
+<body>
+  <!-- Put your theme's inside this script tag. The script tag will
+       prevent issues with quote escaping and invalid markup. -->
+  <script id="theme" type="text/x-handlebars-template">
+  
+	{{{title}}}
+  
+  {{#region "columnizer" id="middle-region" max_cols="6" class="gradient" dummy_content="I-5|T-1|T-1,T-1|T-1,T-2,T-1|I-3|I-3,I-2|I-3,I-2|I-3,I-2,I-4|I-3,I-2,I-1,I-3|I-3,I-2,I-1,I-3,I-2|I-3,I-2,I-1,I-3,I-2,I-4|T-1,T-2,T-1,T-1,T-2|T-1,T-2,T-1,T-1,T-2,T-1|V-4|V-2,V-1|V-4,V-2,V-3|D-4|D-3,D-3|D-3,D-2,D-3|D-3,D-2,D-3,D-1|D-3,D-2,D-3,D-3,D-1|D-3,D-2,D-3,D-3,D-2,D-3|E-1|E-2,E-3|E-2,E-4,E-2" default_content="T-1|I-1|I-1,I-1" max_auto_assets="1"}}
+			
+		{{#asset "text" size="1"}}
+      <div class="content">
+      	{{{title}}}
+        {{{body}}}
+      </div>
+		{{/asset}}
+
+		{{#asset "text" size="2"}}
+      <div class="content">
+      	{{{title}}}
+        {{{body}}}
+      </div>
+		{{/asset}}
+
+		{{#asset "text" size="3"}}
+      <div class="content">
+      	{{{title}}}
+        {{{body}}}
+      </div>
+		{{/asset}}
+
+		{{#asset "text" size="4"}}
+      <div class="content">
+      	{{{title}}}
+        {{{body}}}
+      </div>
+		{{/asset}}
+
+		{{#asset "text" size="5"}}
+      <div class="content">
+      	{{{title}}}
+        {{{body}}}
+      </div>
+		{{/asset}}
+
+		{{#asset "text" size="6"}}
+      <div class="content">
+      	{{{title}}}
+        {{{body}}}
+      </div>
+		{{/asset}}
+
+
+		{{#asset "imagegroup" size="1"}}
+			<div class="content">
+				{{{imageslider contents width="960" height="470" prevnext-enabled=false fx="fade" crop-single=true}}}
+        <div class="asset-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+		{{#asset "imagegroup" size="2"}}
+			<div class="content">
+				{{{imageslider contents width="470" height="150" prevnext-enabled=false fx="fade" crop-single=true}}}
+        <div class="asset-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+		{{#asset "imagegroup" size="3"}}
+			<div class="content">
+        {{{imageslider contents width="306" height="125" prevnext-enabled=false fx="fade" crop-single=true}}}
+        <div class="asset-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+		{{#asset "imagegroup" size="4"}}
+			<div class="content">	
+        {{{imageslider contents width="230" height="125" prevnext-enabled=false fx="fade" crop-single=true}}}
+        <div class="asset-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+		{{#asset "imagegroup" size="5"}}
+			<div class="content">	
+        {{{imageslider contents width="184" height="125" prevnext-enabled=false fx="fade" crop-single=true}}}
+        <div class="asset-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+		{{#asset "imagegroup" size="6"}}
+			<div class="content">	
+        {{{imageslider contents width="150" height="125" prevnext-enabled=false fx="fade" crop-single=true}}}
+        <div class="asset-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+
+		{{#asset "videogroup" size="1"}}
+			<div class="content">
+        {{{videoplayer contents width="960" height="720" resolution="medium"}}}
+				<div class="asset-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+		{{#asset "videogroup" size="2"}}
+			<div class="content">
+        {{{videoplayer contents width="470" height="352" resolution="medium"}}}
+				<div class="asset-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+		{{#asset "videogroup" size="3"}}
+			<div class="content">
+        {{{videoplayer contents width="306" height="230" resolution="medium"}}}
+				<div class="asset-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+		{{#asset "videogroup" size="4"}}
+			<div class="content">
+        {{{videoplayer contents width="230" height="173" resolution="medium"}}}
+				<div class="asset-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+		{{#asset "videogroup" size="5"}}
+			<div class="content">
+        {{{videoplayer contents width="184" height="138" resolution="medium"}}}
+				<div class="asset-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+		{{#asset "videogroup" size="6"}}
+			<div class="content">
+        {{{videoplayer contents width="140" height="105" resolution="medium"}}}
+				<div class="asset-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+
+		{{#asset "embedgroup" size="1" width="960"}}
+			<div class="content">
+        {{#embeds}}
+          <div class="embed">{{{html}}}</div>
+        {{/embeds}}
+				<div class="asset-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+		{{#asset "embedgroup" size="2" width="470"}}
+			<div class="content">
+        {{#embeds}}
+          <div class="embed">{{{html}}}</div>
+        {{/embeds}}
+				<div class="asset-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+		{{#asset "embedgroup" size="3" width="306"}}
+			<div class="content">
+        {{#embeds}}
+          <div class="embed">{{{html}}}</div>
+        {{/embeds}}
+				<div class="asset-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+		{{#asset "embedgroup" size="4" width="230"}}
+			<div class="content">
+        {{#embeds}}
+          <div class="embed">{{{html}}}</div>
+        {{/embeds}}
+				<div class="asset-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+		{{#asset "embedgroup" size="5" width="184"}}
+			<div class="content">
+        {{#embeds}}
+          <div class="embed">{{{html}}}</div>
+        {{/embeds}}
+				<div class="asset-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+		{{#asset "embedgroup" size="6" width="150"}}
+			<div class="content">
+        {{#embeds}}
+          <div class="embed">{{{html}}}</div>
+        {{/embeds}}
+				<div class="asset-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+
+		{{#asset "documentgroup" size="1"}}
+			<div class="content">
+				<div class="documents">
+	          {{#documents}}
+	            <a href="{{{original_url}}}" title="{{{format_file_size source_file_size}}}"><span class="file-extension file-extension-{{extension}}"></span> <span class="file-title">{{{title}}}</span> <!-- <span class="filesize">({{{format_file_size source_file_size}}})</span> --></a>
+	          {{/documents}}
+        </div>
+				<div class="documents-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+		{{#asset "documentgroup" size="2"}}
+			<div class="content">
+				<div class="documents">
+          {{#documents}}
+            <a href="{{{original_url}}}" title="{{{format_file_size source_file_size}}}"><span class="file-extension file-extension-{{extension}}"></span> <span class="file-title">{{{title}}}</span></a>
+          {{/documents}}
+        </div>
+				<div class="documents-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+		{{#asset "documentgroup" size="3"}}
+			<div class="content">
+				<div class="documents">
+          {{#documents}}
+            <a href="{{{original_url}}}" title="{{{format_file_size source_file_size}}}"><span class="file-extension file-extension-{{extension}}"></span> <span class="file-title">{{{title}}}</span></a>
+          {{/documents}}
+        </div>
+				<div class="documents-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+			</div>
+		{{/asset}}
+
+		{{#asset "documentgroup" size="4"}}
+			<div class="content">
+				<div class="documents-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+				<div class="documents">
+          {{#documents}}
+            <a href="{{{original_url}}}" title="{{{format_file_size source_file_size}}}"><span class="file-extension file-extension-{{extension}}"></span> <span class="file-title">{{{title}}}</span> <span class="file-size">({{{format_file_size source_file_size}}} {{extension}})</span></a>
+          {{/documents}}
+        </div>
+			</div>
+		{{/asset}}
+
+		{{#asset "documentgroup" size="5"}}
+			<div class="content">
+				<div class="documents-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+				<div class="documents">
+          {{#documents}}
+            <a href="{{{original_url}}}" title="{{{format_file_size source_file_size}}}"><span class="file-extension file-extension-{{extension}}"></span> <span class="file-title">{{{title}}} <span class="file-size">({{{format_file_size source_file_size}}} {{extension}})</span></span></a>
+          {{/documents}}
+        </div>
+			</div>
+		{{/asset}}
+
+		{{#asset "documentgroup" size="6"}}
+			<div class="content">
+				<div class="documents-content">
+					{{{title}}}
+					{{{description}}}
+				</div>
+				<div class="documents">
+          {{#documents}}
+            <a href="{{{original_url}}}" title="{{{format_file_size source_file_size}}}"><span class="file-extension file-extension-{{extension}}"></span> <span class="file-title">{{{title}}}</span> <span class="file-size">({{{format_file_size source_file_size}}} {{extension}})</span></a>
+          {{/documents}}
+        </div>
+			</div>
+		{{/asset}}
+
+  {{/region}}
+
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+// CUSTOM STYLES
+@accent-color: @custom-color;
+
+@main-background-color: hsl(hue(@custom-color), 40%, 60%);
+
+.set-colors() when (lightness(@custom-color) =< 20%) {
+  @overlay-color: @custom-color;
+  @border-color: @custom-color !important;
+}
+
+.set-colors() when (lightness(@custom-color) > 20%) {
+  @overlay-color: fade(hsl(hue(@accent-color), 95%, 80%),30%) !important;
+  @border-color: hsl(hue(@custom-color), 30%, 75%) !important;
+}
+
+.set-colors();
+
+// @text-color: hsl(hue(@custom-color), 50%, 40%) !important;
+
+
+body.palette-custom { 
+
+  #pop-title,.asset-title { color: @custom-color !important; border-color:@border-color; }
+  
+    
+  .asset-type-imagegroup  {
+    &.asset-size-1, &.asset-size-2 { 
+      .asset-title { color:inherit !important; border-color:inherit !important; }
+     }
+  }
+}
+
+
+.overlay-image(@custom-color) when (lightness(@custom-color) =< 10%) {
+  @overlay-desaturated-color: #444;
+  .background-image(e(%("radial-gradient(center center, ellipse cover, %d 0%, %d 33%, %d 100%)", fade(@overlay-desaturated-color, 32%), fade(@overlay-desaturated-color, 38%), fade(@overlay-desaturated-color, 77%))));
+}
+
+.overlay-image(@custom-color) when (lightness(@custom-color) > 10%) {
+  @overlay-desaturated-color: hsl(hue(@custom-color), 15%, 38%);
+  .background-image(e(%("radial-gradient(center center, ellipse cover, %d 0%, %d 33%, %d 100%)", fade(@overlay-desaturated-color, 32%), fade(@overlay-desaturated-color, 38%), fade(@overlay-desaturated-color, 77%))));
+}
+
+
+#pop .overlay {
+  .overlay-image(@custom-color);
+}
