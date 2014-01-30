@@ -107,7 +107,7 @@ here as well. It's not a great solution, but at least it works!
 
 body {
   font-size: 14px;
-  line-height: 1.4em;
+  line-height: 1.4;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   color:@text-color;
@@ -162,18 +162,18 @@ em, i {
 .asset-container.columnizer-col {margin-left: 19px !important;}
 .asset-container.columnizer-col.first {margin-left: 0px !important;}
 
-.columnizer-row { margin-bottom: 1em; }
+.columnizer-row { margin-bottom: 1; }
 .columnizer-col, .columnizer-col2, .columnizer-col3, .columnizer-col4, .columnizer-col5, .columnizer-col5 {margin-right:0; margin-left: 0;}
 
 #pop-title, .asset-title { 
   font-family: @headline-font-family; 
   font-weight: @headline-font-weight; 
-  // letter-spacing: -0.05em; 
+  // letter-spacing: -0.05; 
   }  
 #pop-title { 
   padding: 20px 0; 
   font-size: 48px;
-  line-height: 1em; 
+  line-height: 1; 
   color: @headline-color; 
 }
 
@@ -192,7 +192,7 @@ em, i {
 
 
 .asset-size-1 {
-  .asset-title { font-size: 48px; line-height: 1em; border-color: #ccc;}
+  .asset-title { font-size: 48px; line-height: 1; border-color: #ccc;}
   &.asset-type-text {
     .asset-title { font-size:38px; text-align:left;   }
     .body {   margin: 0 auto;text-align: left;}
@@ -221,23 +221,23 @@ em, i {
 // .ie .asset-type-imagegroup .content:hover .overlay { display: none; }
 
 .asset-size-2 {
-  .asset-title { font-size:32px; line-height: 1em; border-color: #ccc; }
-  .content { line-height: 1.5em; margin: 10px 10px 0px 0px !important; }
+  .asset-title { font-size:32px; line-height: 1; border-color: #ccc; }
+  .content { line-height: 1.5; margin: 10px 10px 0px 0px !important; }
   &.asset-type-text {
     .asset-title { text-align: left; }
   }
   .border { width:470px; height:150px; position: absolute; z-index: 8; background-color: @overlay-color; background-image: url("@{base-url}/images/border-med.png"); background-repeat: no-repeat; background-position: center center; margin-top: 13px; .transition-duration(1s);}
-  .hr-shadow { margin:1em auto -2em auto; width: 60%; }
+  .hr-shadow { margin:1 auto -2 auto; width: 60%; }
   .hr-shadow .shadow { height: 33px; width: 60%; }
   .embed iframe { margin-bottom:5px; }
 }
 
 .asset-size-3 {
-  .asset-title { font-size:28px; line-height: 1em;  border-color: #ccc;}
-  .content { line-height: 1.5em; margin: 10px 10px 0px 0px !important; }
+  .asset-title { font-size:28px; line-height: 1;  border-color: #ccc;}
+  .content { line-height: 1.5; margin: 10px 10px 0px 0px !important; }
   &.asset-type-text {
     .asset-title { text-align: left;  }
-    .hr-shadow { margin:1em auto -2em auto; width: 80%; }
+    .hr-shadow { margin:1 auto -2 auto; width: 80%; }
     .hr-shadow .shadow { height: 33px; width: 70%; }
   }
   .border { width:316px; height:125px; position: absolute; z-index: 8; background-color: @overlay-color; background-image: url("@{base-url}/images/border-med.png"); background-repeat: no-repeat; background-position: center right; margin-top: 13px; .transition-duration(1s);}  
@@ -245,8 +245,8 @@ em, i {
 }
 
 .asset-size-4 {
-  .asset-title { font-size: 24px; line-height: 1.4em; }
-  .content { font-size: .85em; line-height: 1.5em; margin: 10px 10px 0px 0px !important;}
+  .asset-title { font-size: 24px; line-height: 1.4; }
+  .content { font-size: .85; line-height: 1.5; margin: 10px 10px 0px 0px !important;}
   .border { width:240px; height:125px; position: absolute; z-index: 8; background-color: @overlay-color; background-image: url("@{base-url}/images/border-med.png"); background-repeat: no-repeat; background-position: center right; margin-top: 13px; .transition-duration(1s);}  
   .documents { padding-top: 10px;}
   .file-extension { display: none; }
@@ -256,8 +256,8 @@ em, i {
 }
 
 .asset-size-5 {
-  .asset-title { font-size: 21px; line-height: 1.4em;  }
-  .content { font-size: .85em; line-height: 1.5em; margin: 10px 10px 0px 0px !important; }
+  .asset-title { font-size: 21px; line-height: 1.4;  }
+  .content { font-size: .85; line-height: 1.5; margin: 10px 10px 0px 0px !important; }
   .border { width:194px; height:125px; position: absolute; z-index: 8; background-color: @overlay-color; background-image: url("@{base-url}/images/border-med.png"); background-repeat: no-repeat; background-position: center right; margin-top: 0px; .transition-duration(1s);}   
   .documents { padding-top: 10px;}
   .file-extension { display: none; }
@@ -267,8 +267,8 @@ em, i {
 }
 
 .asset-size-6 {
-  .asset-title { line-height: 1.4em;  }
-  .content { font-size: .85em; line-height: 1.4em; margin: 10px 10px 0px 0px !important;}
+  .asset-title { line-height: 1.4;  }
+  .content { font-size: .85; line-height: 1.4; margin: 10px 10px 0px 0px !important;}
   .border { width:160px; height:125px; position: absolute; z-index: 8; background-color: @overlay-color; background-image: url("@{base-url}/images/border-med.png"); background-repeat: no-repeat; background-position: center right; margin-top: 0px; .transition-duration(1s);}   
   .documents { padding-top: 10px;}
   .file-extension { display: none; }
@@ -282,12 +282,12 @@ em, i {
   li a img { display: inline-block; width:25px; height:25px; border: 1px solid #777;}
 }
 
-.hr-shadow { display: block; clear: both; margin: 2em auto -2em auto; width: 90%; height: 60px; overflow: hidden; 
+.hr-shadow { display: block; clear: both; margin: 2 auto -2 auto; width: 90%; height: 60px; overflow: hidden; 
   .edge { height: 1px; background: #E6E6E6; }
   .shadow { height: 40px; width: 80%; margin: 0 auto; position: relative; top: -60px; .box-shadow(0 0 100px #B3B3B3); }
 } 
 
-.filesize { color:fade(@text-color,50%); font-size: .85em;}
+.filesize { color:fade(@text-color,50%); font-size: .85;}
 
 .file-extension {
   display: block;
@@ -335,6 +335,8 @@ em, i {
   text-align: center;
   background: rgba(23, 26, 29, 0.4);
   padding: 0 17.3% !important;
+  max-height: 90%;
+  overflow-y: auto;
   .asset-title, .description { padding-top: 2%; }
   .description { padding-bottom: 2%; }
 }
@@ -350,11 +352,13 @@ em, i {
 
 .asset-size-2 .asset-content {
   position: absolute;
-  bottom: 21px;
+  bottom: 19px;
   z-index: 100;
   width: 85%;
   background: rgba(23, 26, 29, 0.4);
   padding: 0 7.5% !important;
+  max-height: 80%;
+  overflow-y: auto;
   .asset-title, .description { padding-top: 2%; }
   .description { padding-bottom: 2%; }
 }
@@ -427,7 +431,7 @@ em, i {
     clear: both;
     margin: 0 auto;
     text-align: center;
-    font-size:1em;
+    font-size:1;
   }
   .documents {
     margin: 0 auto;
@@ -485,7 +489,7 @@ em, i {
   overflow: hidden;
   background: rgba(201, 201, 201, 0.1);
   text-decoration: none;
-  line-height: 1.3em;
+  line-height: 1.3;
 }
 
 .documents a:hover { background: rgba(201, 201, 201, 0.3); text-decoration: underline;.transition-duration(0.3s);}
@@ -502,7 +506,7 @@ em, i {
   -webkit-line-clamp: 4; // set this to your desired maximum number of lines
   -webkit-box-orient: vertical;
 }
-.filesize { display: block; font-size: .85em; }
+.filesize { display: block; font-size: .85; }
 
 .file-extension {
   display: inline-block;
@@ -670,7 +674,7 @@ em, i {
     padding: 0 0 0px 0;
   }
   .columnizer-row {
-    margin-bottom: 0em;
+    margin-bottom: 0;
   }
   .asset-content {
     width: auto !important;
