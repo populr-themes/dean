@@ -349,6 +349,11 @@ em, i {
   color:@text-color;
   margin: 0 auto;
 }
+//.asset-content link color should be light
+
+.asset-content{
+    a{color:lighten(@accent-color,70%);}
+}
 
 .asset-size-2 .asset-content {
   position: absolute;
@@ -684,6 +689,7 @@ em, i {
     text-shadow: none !important;
     text-align: left !important;
     background: none !important;
+    a{color:lighten(@accent-color,7%)!important;}
   }
 
   .asset-size-1 .asset-content, .asset-size-2 .asset-content { padding: 0 !important; }
